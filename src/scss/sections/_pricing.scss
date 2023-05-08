@@ -1,0 +1,143 @@
+.pricing {
+	background: url("@img/pricing_bg.png") no-repeat;
+	background-size: cover;
+	height: max-content;
+	background-position: center;
+	transform: translateY(-1px);
+	&__allblock {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 18px;
+	}
+	&__title {
+		@include fontMontserrat(700, 28px, 42px);
+		@include pricingText;
+	}
+	&__block {
+		width: 257px;
+		height: 457px;
+		background: rgba(255, 255, 255, 0.11);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		margin: 18px 0;
+		padding-bottom: 37px;
+	}
+	&__block-header {
+		width: 257px;
+		height: 97px;
+		background: rgba(255, 255, 255, 0.06);
+		@include fontMontserrat(400, 24px, 24px);
+		@include pricingText;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: center;
+	}
+	&__block-cost {
+		@include fontMontserrat(700, 60px, 62px);
+		@include pricingText;
+		text-transform: uppercase;
+	}
+	&__block-month {
+		@include fontMontserrat(400, 14px, 16px);
+		@include pricingText;
+		text-transform: uppercase;
+	}
+	&__block-line {
+		content: "";
+		background: #8d81ac;
+		width: 60px;
+		height: 5px;
+	}
+	&__block-conditions {
+		@include fontMontserrat(400, 16px, 18px);
+		@include pricingText;
+	}
+	&__block-btn {
+		width: 163px;
+		height: 45px;
+		background: rgba(255, 255, 255, 0.15);
+		@include fontMontserrat(400, 15px, 15px);
+		@include pricingText;
+		text-transform: uppercase;
+		border-radius: 35px;
+	}
+	&__blockactiv {
+		width: 299px;
+		height: 560px;
+		background: rgba(70, 48, 72, 0.84);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		margin: 9px 0;
+		padding-bottom: 37px;
+	}
+	&__blockactiv-header {
+		width: 299px;
+		height: 111px;
+		background: rgba(0, 0, 0, 0.11);
+		@include fontMontserrat(400, 24px, 24px);
+		@include pricingText;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: center;
+	}
+}
+@media (min-width: $md2) {
+	.pricing {
+		background: url("@img/pricing_bg_2.png");
+		padding-bottom: 94px;
+		&__title {
+			@include fontMontserrat(700, 42px, 44px);
+			padding-top: 90px;
+		}
+		&__allblock {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			gap: 25px;
+		}
+		&__blockactiv {
+			transform: translateX(-20px);
+		}
+		&__block-for {
+			transform: translateX(-20px);
+		}
+	}
+}
+@media (max-width: 559px) {
+	.pricing {
+		&__blockactiv {
+			transform: translateX(0px);
+		}
+		&__block-for {
+			transform: translateX(0px);
+		}
+	}
+}
+@media (min-width: 883px) {
+	.pricing {
+		&__blockactiv {
+			transform: translateX(0px);
+		}
+		&__block-for {
+			transform: translateX(0px);
+		}
+	}
+}
+@media (min-width: $md3) {
+	.pricing {
+		background: url("@img/pricing_bg_3.png");
+		padding-bottom: 73px;
+		&__title {
+			@include fontMontserrat(700, 48px, 50px);
+			padding-top: 114px;
+			padding-bottom: 61px;
+		}
+	}
+}

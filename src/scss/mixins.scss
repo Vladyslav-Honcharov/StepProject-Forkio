@@ -1,0 +1,22 @@
+@import "variables";
+@mixin fontLoto($weight, $size, $line) {
+	font-family: "Lato";
+	font-weight: $weight;
+	font-style: normal;
+	font-size: $size;
+	line-height: $line;
+	text-align: center;
+}
+@mixin fontMontserrat($weight, $size, $line) {
+	font-family: "Montserrat";
+	font-weight: $weight;
+	font-style: normal;
+	font-size: $size;
+	line-height: $line;
+	text-align: center;
+}
+@mixin pricingText {
+	color: #ffffff;
+	align-items: center;
+	text-align: center;
+}

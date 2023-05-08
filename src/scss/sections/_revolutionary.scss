@@ -1,0 +1,78 @@
+.revolutionary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+	margin: 44px 14px 88px 14px;
+	&__title {
+		@include fontMontserrat(700, 26px, 28px);
+		color: #635c73;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__text {
+		@include fontLoto(400, 14px, 20px);
+		color: #323232;
+		text-align: center;
+	}
+	&__btn {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 25px;
+	}
+	&__gitbtn {
+		width: 120px;
+		height: 27px;
+		display: flex;
+		background-color: #f6f8fa;
+		border-radius: 6px;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	&__gitbtn-circl {
+		border-radius: 2em;
+		background-color: rgba(27, 31, 36, 0.08);
+		padding: 0 6px;
+		text-align: center;
+		display: inline-block;
+	}
+	&__dropdown-caret {
+		margin-left: 4px;
+		opacity: 0.8;
+		border-bottom-color: #0000;
+		border-left-color: #0000;
+		border-right-color: #0000;
+		border-style: solid;
+		border-width: var(--primer-borderWidth-thicker, 4px) var(--primer-borderWidth-thicker, 4px) 0;
+		content: "";
+		display: inline-block;
+		height: 0;
+		vertical-align: middle;
+		width: 0;
+	}
+}
+
+@media (min-width: $md2) {
+	.revolutionary {
+		margin: 88px 30px 98px 30px;
+		&__title {
+			@include fontMontserrat(700, 42px, 42px);
+		}
+		&__text {
+			@include fontLoto(400, 21px, 32px);
+		}
+	}
+}
+
+@media (min-width: $md3) {
+	.revolutionary {
+		margin: 0 233px 70px 221px;
+		&__title {
+			@include fontMontserrat(700, 54px, 54px);
+		}
+		&__text {
+			width: 80vw;
+		}
+	}
+}

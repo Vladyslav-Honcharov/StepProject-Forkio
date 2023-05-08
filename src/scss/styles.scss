@@ -1,0 +1,16 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "./sections/header";
+@import "./sections/about";
+@import "./sections/revolutionary";
+@import "./sections/features";
+@import "./sections/pricing";
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  min-width: 320px;
+  padding: 0 10px;
+}
